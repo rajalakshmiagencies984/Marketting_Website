@@ -1,0 +1,22 @@
+.productList{
+        max-width: 30%;
+        min-width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 24px;
+        transition: 500ms;
+        cursor: pointer;
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+.heading{
+    color: var(--peacock);
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+}

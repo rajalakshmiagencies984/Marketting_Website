@@ -1,0 +1,18 @@
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+    z-index: 99;
+    
+}
+
+.navbarContainer{
+    border-bottom:2px solid var(--yellow);
+}
+
+.brandName{
+    font-size: 24px;
+    color: var(--peacock);
+    font-weight: 600;
+}
