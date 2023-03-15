@@ -1,38 +1,22 @@
 import React from 'react'
 import styles from '../styles/Footer.module.scss'
-// import Button from 'react-bootstrap/Button';
-// import Card from 'react-bootstrap/Card';
-import store from "./store";
-
+import Image from 'next/image'
+import img from '../assets/logo.png'
 const Footer = () => {
   return (
-    <div className='row' style={{display:"flex"}}>
-      <div  className={`col-sm-12 col-md-6 col-lg-4 my-1 shadow mx-3 ${styles.cards}`}>
-        <img src={store} alt="" /><br />
-        <h2>Location : Koduvai</h2>
-        <p className={styles.address} >
-        <h4>Address </h4>
-          <p>Rajalakshmi Agencies <br />Dharapuram Main Road,<br />Koduvai - 638660. </p>
-        </p>
+    <div  className={styles.container}>
+     <div className={`navbar-brand ${styles.logoContainer}`}>
+        <div style={{marginLeft:"10%"}}>
+            <Image src={img} alt="logo" height={45} width={35} />
+        </div>
+        <div >
+          Rajalakshmi Agencies
+        </div>
       </div>
-
-      <div className={`col-sm-12 col-md-6 col-lg-4 my-1 shadow mx-3 ${styles.cards}`}>
-        <img src={store} alt="" /><br />
-        <h2>Location : Perunthuluvu</h2>
-        <p className={styles.address} >
-        <h4>Address </h4>
-          <p>Rajalakshmi Agencies <br />Dharapuram Main Road,<br />Koduvai - 638660. </p>
-        </p>
-      </div>
-
-      <div className={`col-sm-12 col-md-6 col-lg-4 my-1 shadow mx-3 ${styles.cards}`}>
-        <img src={store} alt="" /><br />
-        <h2>Location : Kundadam</h2>
-        <p className={styles.address} >
-        <h4>Address </h4>
-          <p>Rajalakshmi Agencies <br />Dharapuram Main Road,<br />Koduvai - 638660. </p>
-        </p>
-      </div>
+      <span className={styles.container}><p style={{marginRight:"3%"}}>Privacy Policy </p>
+      <p style={{marginRight:"3%"}}>Terms and Conditions of Use</p>
+      <p style={{marginRight:"3%"}}>Listen . Learn . Deliver</p>
+      <p>Copyright &copy; 2023</p></span>
     </div>
   )
 }
