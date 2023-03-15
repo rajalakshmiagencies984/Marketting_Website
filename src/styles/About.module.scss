@@ -1,0 +1,19 @@
+.heading{
+    color: var(--peacock);
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cards{
+    border: 2px solid;
+    width: 30%;
+    height: max-content;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
