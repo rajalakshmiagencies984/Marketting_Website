@@ -1,0 +1,39 @@
+.container {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:6px;
+    border-radius: 12px;
+    padding: 12px;
+    transform: scale(0.8);
+    transition: 500ms;
+   
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 400;
+}
+.address{
+    p{
+        font-size: 18px;
+    }
+    
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+}
+.link{
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
