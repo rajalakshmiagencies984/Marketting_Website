@@ -3,6 +3,7 @@ import Navbar from '@/Components/Navbar'
 import Products from '@/Components/Products'
 import Footer from '@/Components/Footer'
 import Locations from '@/Components/Locations'
+import Main from '@/Components/Main'
 export default function Home() {
   return (
     <>
@@ -23,7 +24,7 @@ export default function Home() {
         
         <Navbar />
       
-
+        <Main />
         <Products />
         <Locations />
         <Footer />
