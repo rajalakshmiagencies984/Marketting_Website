@@ -1,3 +1,7 @@
+.container{
+    background-color:#00698e;
+}
+
 .productList{
         max-width: 30%;
         min-width: fit-content;
@@ -17,8 +21,10 @@
     }
 
 .heading{
-    color: var(--peacock);
+    color: var(--white);
+    font-weight: bold;
     font-size: 24px;
     font-weight: 500;
-    margin-top: 10px;
+    
+    
 }

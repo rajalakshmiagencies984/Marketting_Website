@@ -27,7 +27,7 @@ export default function Home() {
       
         <Main />
 
-        <Navbar />
+       
         <Products />
         <Learn />
         <Locations />
