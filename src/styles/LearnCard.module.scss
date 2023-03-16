@@ -1,0 +1,52 @@
+.heading {
+    color: var(--peacock);
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 14px;
+}
+
+.container {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    border-radius: 12px;
+    padding: 12px;
+    transform: scale(0.8);
+    transition: 500ms;
+    border: 2px solid var(--peacock);
+
+}
+
+.title {
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.address {
+    p {
+        font-size: 18px;
+        justify-content: center;
+    }
+
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.link {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

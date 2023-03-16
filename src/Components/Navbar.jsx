@@ -4,7 +4,7 @@ import Image from 'next/image'
 import img from '../assets/logo.png'
 const Navbar = () => {
   return (
-   <nav className={`navbar shadow sticky-top navbar-expand-lg ${styles.navbarContainer}`}>
+   <nav className={`navbar shadow sticky-top navbar-expand-lg navbar-dark bg-dark ${styles.navbarContainer}`}>
     <div className="container-fluid">
       <div className={`navbar-brand ${styles.logoContainer}`}>
         <div className="img-container">
