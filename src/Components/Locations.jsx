@@ -8,23 +8,23 @@ const Locations = () => {
         {
             name:"Koduvai",
             address:"Rajalakshmi Agencies Dharapuram Main Road,Koduvai - 638660.",
-            phone:8667259481,
+            phone:9080148814,
             map:"https://goo.gl/maps/g2rabfi4vKkUsWHc8",
             background:"#00aa95",
             color:"white"
         },
         
           {
-            name:"Koduvai",
+            name:"Peruntholuvu",
             address:"Rajalakshmi Agencies Dharapuram Main Road,Koduvai - 638660.",
-            phone:8667259481,
+            phone:9842406979,
             map:"https://goo.gl/maps/g2rabfi4vKkUsWHc8",
             background:"#a5e887",
             color:"black"
         },
         
            {
-            name:"Koduvai",
+            name:"Kundadam",
             address:"Rajalakshmi Agencies Dharapuram Main Road,Koduvai - 638660.",
             phone:8667259481,
             map:"https://goo.gl/maps/g2rabfi4vKkUsWHc8",

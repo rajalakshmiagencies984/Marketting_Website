@@ -27,6 +27,7 @@ const Main = () => {
     <div className={styles.bottom}>
 
     </div>
+    
     </div>
   )
 }
