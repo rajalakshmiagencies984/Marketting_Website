@@ -1,29 +1,46 @@
-.container{
-    width: 100%;
-   height: 90vh;
-   background-image: url('../assets/wave.svg');
-   background-repeat: no-repeat;
-   background-size: cover;
+.container {
+  width: 100%;
+  height: 90vh;
+  background-image: url('../assets/wave.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.logoContainer{
+.logoContainer {
   display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    height: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
+
+.brand {
+  font-size: 48px;
+
+}
+
+.quote {
+  font-size: 24px;
+  font-style: italic;
 }
 
 
-
-.brand{
-    font-size: 48px;
-
+.app {
+  box-sizing: border-box;
+  background-color: #fff;
 }
 
-
-.quote{
-    font-size: 24px;
-    font-style: italic;
+.text {
+  text-align: center;
+  color: #000;
+  font-size: 2.25em;
+  font-weight: 600;
 }
 
+.appimg {
+  text-align: center;
+}
+
+.appstore {
+  padding: 1%;
+}

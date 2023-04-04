@@ -39,7 +39,9 @@
     align-items: center;
     gap: 12px;
 }
-
+.image{
+    width: fit-content;
+}
 .link {
     background-color: var(--white);
     border-radius: 12px;
