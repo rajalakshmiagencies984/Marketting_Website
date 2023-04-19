@@ -6,7 +6,7 @@ const LearnCard = ({ name, address }) => {
   return (
     <div className={`col-sm-12 col-md-4 my-3  shadow ${styles.container}`}>
       <div>
-        <Image src={store} alt="store" width='400' height='240' />
+        <Image src={store} alt="store" className={styles.image}/>
       </div>
       <div className={styles.title}>
         {name}
