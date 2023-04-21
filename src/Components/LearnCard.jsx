@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/LearnCard.module.scss'
 const LearnCard = ({ name, address }) => {
   return (
-    <div className={`col-sm-12 col-md-4 my-3  shadow ${styles.container}`}>
+    <div className={`col-sm-12 col-md-4 my-3  shadow ${styles.cardcontainer}`}>
       <div>
         <Image src={store} alt="store" className={styles.image}/>
       </div>
@@ -15,7 +15,7 @@ const LearnCard = ({ name, address }) => {
         <p>{address}</p>
       </div>
       <div className={styles.link}>
-        <button className='btn btn-success'>Read more &rarr;</button>
+        <button className='btn btn-light'>Read more &rarr;</button>
       </div>
     </div>
   )

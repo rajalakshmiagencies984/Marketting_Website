@@ -1,8 +1,13 @@
-
 .container{
         background-color: #00698e;
-        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
 }
+
 
 
 .heading{

@@ -6,6 +6,7 @@
     --peacock:#00aa95;
     --white:#FFF;
     --black:#000;
+    --blue:#00698e;
 }
 *{
     margin: 0;
@@ -21,21 +22,3 @@ html,body{
     background-color: var(--white);
 }
 
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: var(--yellow);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--peacock);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--green);
-}

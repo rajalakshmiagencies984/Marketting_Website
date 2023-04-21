@@ -23,7 +23,7 @@ const Learn = () => {
 
     ]
     return (
-        <div className='container'>
+        <div className={styles.container}>
             <p className={`${styles.heading}`}>Learn About Us</p>
             <div className={` row ${styles.locationsList}`}>
                 {locations.map((l, i) => (
