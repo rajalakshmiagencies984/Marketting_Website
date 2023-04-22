@@ -1,46 +1,6 @@
 .container{
-    width: 100%;
-   height: 90vh;
-   background-image: url('../assets/wave.svg');
-   background-repeat: no-repeat;
-   background-size: cover;
+   width: 100%;
+   height: 100vh;
+   background-color: var(--yellow);
 }
 
-.logoContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  height: 100%;
-}
-
-.brand {
-  font-size: 48px;
-
-}
-
-.quote {
-  font-size: 24px;
-  font-style: italic;
-}
-
-
-.app {
-  box-sizing: border-box;
-  background-color: #fff;
-}
-
-.text {
-  text-align: center;
-  color: #000;
-  font-size: 2.25em;
-  font-weight: 600;
-}
-
-.appimg {
-  text-align: center;
-}
-
-.appstore {
-  padding: 1%;
-}

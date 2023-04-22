@@ -1,6 +1,14 @@
 .container{
-    background-color:#00698e;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--white);
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 
 .productList{
         max-width: 30%;
@@ -13,7 +21,7 @@
         transition: 500ms;
         cursor: pointer;
         &:hover {
-            transform: scale(0.9);
+            transform: scale(0.81);
         }
         &:not(:hover){
             transform: scale(0.8);
@@ -23,7 +31,7 @@
 .heading{
     color: var(--white);
     font-weight: bold;
-    font-size: 24px;
+    font-size: 48px;
     font-weight: 500;
     
     

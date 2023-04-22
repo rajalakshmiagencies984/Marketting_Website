@@ -10,36 +10,35 @@ const Footer = () => {
 
   return (
     
-      <div className={` ${styles.foot}`}>
-        <div className="row">
-          <div className={`col-3 ${styles.subfoot}`}>
-            <h6>OUR PRODUCTS</h6>
-            {products.map((p,i)=>(
-              <p className='p-0 m-1' key={i}>{p}</p>
-            ))}
+    <div className={styles.container}>
+         
+            <div className={styles.productsContainer}>
+                <p className={styles.title}>
+                    Our Product
+                </p>
+                <div className="products">
+                    {products.map((p,i)=>(
+                      <p className={styles.product} key={i}>{p}</p>
+                    ))}
+                </div>
           </div>
-          <div className='col-3'>
-          <h6>COMPANY</h6>
-            {extra.map((e,i)=>(
-              <p key={i} className="p-0 m-0">{e}</p>
-            ))}
-          </div>
-          <div className='col-3'>
-          <h6>SOCIAL NETWORK</h6>
-          <div className={styles.socialContainer}>
+
+          <div>
+            <h6>SOCIAL NETWORK</h6>
+            <div className={styles.socialContainer}>
             {logos.map((l,i)=>(
-              <div className={`mb-2 shadow ${styles.socialLogos}`} key={i}>
-                  <Image src={l} alt={`logo_${i}`} height={24} width={24}  />
-              </div>
+                <div className={`mb-2 shadow ${styles.socialLogos}`} key={i}>
+                    <Image src={l} alt={`logo_${i}`} height={24} width={24}  />
+                </div>     
             ))}
           </div>
-          </div>
-          <div className='col-3'>
-             <Image src={img} alt="logo" height={150} width={150} />
-          </div>
-        </div>
       </div>
+          
+    </div>
   )
 }
 
+
 export default Footer
+
+
