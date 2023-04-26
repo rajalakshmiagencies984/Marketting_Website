@@ -22,17 +22,12 @@ export default function Home() {
 
       </Head>
       <main >
-        
         <Navbar />
-      
         <Main />
-
-       
         <Products />
         <Learn />
         <Locations />
         <Footer />
-
       </main>
     </>
   )

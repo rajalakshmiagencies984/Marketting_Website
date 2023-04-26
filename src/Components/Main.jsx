@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import img from '../assets/farmer.png'
 import styles from '../styles/Main.module.scss'
+import Slider from './Slider'
 
 const Main = () => {
     const quotes = [
@@ -13,7 +14,7 @@ const Main = () => {
     return (
         <div className={styles.container}>
             <div className={styles.innerContainer}>
-             
+             <Slider/>
            </div>
         </div>
     )
