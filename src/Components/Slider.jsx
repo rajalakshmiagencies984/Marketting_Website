@@ -3,21 +3,21 @@ import styles from '../styles/Slider.module.scss'
 
 
 const images = [
-  { url: "https://thumbs.dreamstime.com/b/farmer-spraying-pesticide-field-27431865.jpg" },
-  { url: "https://thumbs.dreamstime.com/b/spraying-pesticides-28301470.jpg" },
-  { url: "https://thumbs.dreamstime.com/b/farming-tractor-15546358.jpg" },
-  { url: "https://thumbs.dreamstime.com/b/farming-tractor-11283409.jpg" },
-  { url: "https://thumbs.dreamstime.com/b/spraying-pesticides-1-18708579.jpg" },
-  { url: "https://thumbs.dreamstime.com/b/corn-fields-farm-tractor-5259518.jpg" },
-  { url: "https://thumbs.dreamstime.com/b/spraying-peach-9599444.jpg" },
+  {url:"https://images.unsplash.com/photo-1656918828509-e674e5e99422?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGFncmljdWx0dXJlJTIwcGVzdGlzaWRlJTIwc2hvcHN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=1500&q=600"},
+  {url:"https://images.unsplash.com/photo-1628352081506-83c43123ed6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjcyfHxhZ3JpY3VsdHVyZSUyMHBlc3Rpc2lkZSUyMHNob3BzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1500&q=600"},
+  { url: "https://images.unsplash.com/photo-1655130944329-b3a63166f6b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fHNwcmF5aW5nJTIwcGVzdGlzaWRlcyUyMGFncmljdWx0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1500&q=1500" },
+  { url: "https://images.unsplash.com/photo-1655130944281-072e0644db75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fHNwcmF5JTIwcGVzdGlzaWRlcyUyMGluJTIwYWdyaWN1bHR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=1000&q=1000" },
+  { url: "https://images.unsplash.com/photo-1589876568181-a1508b8ef473?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=1000" },
+  { url: "https://images.unsplash.com/photo-1597916829826-02e5bb4a54e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTY1fHxzcHJheWluZyUyMHBlc3Rpc2lkZXMlMjBhZ3JpY3VsdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=1000" },
+  { url: "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=800" },
 ];
 
 const Slider = () => {
   return (
     <div className={styles.container}>
-      <SimpleImageSlider className={styles.images}
-        width={1500}
-        height={630}
+      <SimpleImageSlider className={styles.images} 
+        width={790}
+        height={600}
         images={images}
         showBullets={true}
         autoPlay={true}

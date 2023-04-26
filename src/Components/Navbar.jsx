@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import styles from '../styles/Navbar.module.scss'
 import Image from 'next/image'
 import img from '../assets/logo.png'
 const Navbar = () => {
+
   return (
    <nav className={styles.navbar}>
       <div className={styles.logoContainer}>

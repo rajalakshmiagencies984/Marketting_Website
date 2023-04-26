@@ -13,9 +13,7 @@ const Main = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.innerContainer}>
-             <Slider/>
-           </div>
+            <Slider/>
         </div>
     )
 }
