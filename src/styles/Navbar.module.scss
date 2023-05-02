@@ -1,42 +1,38 @@
-.navbar{
+.navbar {
     position: fixed;
-    top:0;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2000;
     width: 100%;
+     z-index: 100;
+    height: auto;
     padding: 1rem;
-
+    background-color: var(--white);
 }
 
-
-.colorChange{
-    background-color: #000 !important;
-}
-
-.logoContainer{
+.logoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:12px;
+    gap: 12px;
 }
 
-.logo{
+.logo {
     background-color: var(--white);
     padding: 6px;
     border-radius: 12px;
 }
 
-.logoImage{
+.logoImage {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    stroke:var(--white);
+    stroke: var(--white);
 }
 
-.brand{
+.brand {
     color: var(--peacock);
     font-size: 24px;
 }

@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import styles from '../styles/Navbar.module.scss'
 import Image from 'next/image'
 import img from '../assets/logo.png'
 
 const Navbar = () => {
+
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () =>{
      if(window.scrollY >= 80){
