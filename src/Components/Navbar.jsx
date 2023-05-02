@@ -1,10 +1,24 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import styles from '../styles/Navbar.module.scss'
 import Image from 'next/image'
 import img from '../assets/logo.png'
+
 const Navbar = () => {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  useEffect(()=>{
+    window.addEventListener('scroll', changeNavbarColor);
+
+  })
   return (
-   <nav className={styles.navbar}>
+   <nav className={colorChange ? [styles.navbar,styles.colorChange ]: styles.navbar}>
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
           <Image src={img} alt="image" height={24} width={24} className={styles.logoImage} />
@@ -12,9 +26,6 @@ const Navbar = () => {
         <div className={styles.brand}>
             Rajalkshmi Agencies
         </div>
-      </div>
-      <div>
-
       </div>
    </nav>
   )
