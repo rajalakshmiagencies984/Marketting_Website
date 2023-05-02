@@ -14,9 +14,9 @@ const LearnCard = ({ name, address }) => {
       <div className={`text-center ${styles.address}`}>
         <p>{address}</p>
       </div>
-      <div className={styles.link}>
+      {/* <div className={styles.link}>
         <button className='btn btn-light'>Read more &rarr;</button>
-      </div>
+      </div> */}
     </div>
   )
 }

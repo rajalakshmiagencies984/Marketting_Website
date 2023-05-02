@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
 
-    <div className={` ${styles.foot}`}>
+    <><div className={`${styles.foot}`}>
       <div className={`row ${styles.container}`}>
         <div className={`col-3 ${styles.subfoot}`}>
           <h6>OUR PRODUCTS</h6>
@@ -40,9 +40,12 @@ const Footer = () => {
           <h5 className={styles.brand}>Rajalkshmi Agencies</h5>
           <h5>Send Feedback</h5>
           <button className={`btn ${styles.link}`}>Feedback &rarr;</button>
-          </div>
+        </div>
       </div>
-    </div>
+      </div>
+      <div className={styles.copyright}>
+      © 2023 All rights reserved. Rajajakshmi Agencies
+    </div></>
   )
 }
 
