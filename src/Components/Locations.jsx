@@ -37,7 +37,7 @@ const Locations = () => {
   return (
 
     <div className={styles.container}>
-        <p className={` mx-5 ${styles.heading}`}>Our Locations</p> 
+        <p className={` ${styles.heading}`}>Our Locations</p> 
         <div className={` row ${styles.locationsList}`}>
             {locations.map((l,i)=>(
                 <LocationCard key={i} {...l} />

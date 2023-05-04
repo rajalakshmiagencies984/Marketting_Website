@@ -1,47 +1,24 @@
-.container{
-    height: 100vh;
-    width: 100%;
+.container {
+    height:80dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:24px;
-    background-color: var(--green);
-    
-}
-.heading {
-    color: var(--white);
-    font-size: 48px;
-    font-weight: 500;
-  
-}
-
-.cardcontainer {
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 6px;
+    gap:6px;
     border-radius: 12px;
     padding: 12px;
     transform: scale(0.8);
     transition: 500ms;
-    border: 4px solid var(--white);
+   
 }
 
-.title {
+.title{
     font-size: 32px;
-    font-weight: 600;
-    color: var(--black);
+    font-weight: 400;
 }
-
-.address {
-    p {
-        font-size:22px;
-        justify-content: center;
-        color: var(--black);
+.address{
+    p{
+        font-size: 20px;
     }
-
+    
 }
-

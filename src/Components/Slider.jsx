@@ -17,26 +17,35 @@ const images = [
 
 const Slider = () => {
   return (
-    <div className={`row ${styles.container}`} >
-      <div className={`col-7 ${styles.image}`}>
-        <SimpleImageSlider className={styles.images}
-          width={790}
-          height={600}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-          navSize={30}
-          navMargin={5}
-          navStyle={2}
-        />
-      </div>
-      <div className={`col-5 ${styles.company_details}`}>
-        <Image src={img} alt="logo" height={150} width={150} className={`mt-3 ${styles.logo}`} />
-        <h5 className={styles.brand}>Rajalkshmi Agencies</h5>
-        <h5 className={styles.app}>Click the download button to get the app</h5>
-
-      </div>
-    </div>
+    <>
+      <div className={`row ${styles.container}`}>
+        <div className={`col-7 ${styles.image}`}>
+          <SimpleImageSlider className={styles.images}
+            width={790}
+            height={550}
+            images={images}
+            showBullets={true}
+            showNavs={true}
+            navSize={30}
+            navMargin={5}
+            navStyle={2} />
+        </div>
+        <div className={`col-5 ${styles.company_details}`}>
+          <div className={styles.animated_title}>
+            <div className={styles.text_top}>
+              <div>
+                <span >
+                  <Image src={img} alt="logo" height={150} width={150} className={`${styles.logo}`} />
+                </span>
+                <span>Rajalkshmi</span>
+              </div>
+            </div>
+            <div className={styles.text_bottom}>
+              <div>Agencies</div>
+            </div>
+          </div>
+        </div>
+      </div></>
 
   );
 }

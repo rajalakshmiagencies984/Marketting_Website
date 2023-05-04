@@ -1,8 +1,7 @@
 .container{
     height: 100vh;
     width: 100%;
-    background-color: var(--white);
-    background-color: var(--blue);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,9 +28,9 @@
     }
 
 .heading{
-    color: var(--white);
+    color: var(--peacock);
     font-weight: bold;
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 500;
     
     
