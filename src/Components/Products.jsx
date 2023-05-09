@@ -5,12 +5,12 @@ import styles from '../styles/Products.module.scss'
 const Products = () => {
 
     const category = [
-        {title:"Insecticide",color:"#BBD6B8",outline:'#94AF9F'},
-        {title:"Fungicide",color:"#00aa95"},
-        {title:"Crop Enhancement",color:"#00aa95"},
-        {title:"Herbicides",color:"#a5e887"},
-        {title:"Fertilizers",color:"#00cb75"},
-        {title:"Seeds",color:"#a5e887"}
+        {title:"Insecticide",color:"#E4D0D0",outline:'#94AF9F'},
+        {title:"Fungicide",color:"#A0C3D2"},
+        {title:"Crop Enhancement",color:"#CEEDC7"},
+        {title:"Herbicides",color:"#E4D0D0"},
+        {title:"Fertilizers",color:"#A0C3D2"},
+        {title:"Seeds",color:"#CEEDC7"}
   ]
 
   return (
