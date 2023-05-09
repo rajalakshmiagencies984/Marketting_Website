@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import img from '../assets/farmer.png'
+import img from '../assets/logo.png'
 import styles from '../styles/Main.module.scss'
 import Slider from './Slider'
 
@@ -12,9 +12,25 @@ const Main = () => {
     ]
 
     return (
-        <div className={styles.container}>
-            <Slider/>
-        </div>
+
+        <><div className={`row ${styles.container}`}>
+            <div className={`${styles.animated_title}`}>
+                <div className={styles.text_top}>
+                    <div>
+                        <span>
+                            <Image src={img} alt="logo" height={150} width={150} className={`${styles.logo}`} />
+                        </span>
+                        <span>Rajalkshmi</span>
+                    </div>
+                </div>
+                <div className={styles.text_bottom}>
+                    <div>Agencies</div>
+                </div>
+            </div>
+        </div><div>
+                <Slider />
+            </div></>
+        
     )
 }
 

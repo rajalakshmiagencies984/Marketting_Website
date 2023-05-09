@@ -1,105 +1,72 @@
-@keyframes showTopText {
-  0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0,40%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
-}
-@keyframes showBottomText {
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
-}
-.animated_title {
-  color: #03CA76;
-  height: 90vmin;
-  left: 0%;
-  top: 50%;
-  position: static;
-  transform: translate(0%, 0%);
-  width: 90vmin;
-}
-.animated_title > div {
-  height: 52%;
-  overflow: hidden;
-  position: absolute;
-  width: 90%;
-}
-.animated_title > div div  {
-  font-size: 12vmin;
-  padding: 0vmin 0;
-  position: absolute;
-}
-.animated_title > div div  {
-  display: block;
-}
-.animated_title > div.text_top {
-  // border-bottom: 4px solid rgb(45, 44, 44);
-  top: 0;
-}
-.animated_title > div.text_top div {
-  animation: showTopText 1.5s;
-  animation-delay: 1s;
-  animation-fill-mode:forwards;
-  bottom: 0%;
-  transform: translate(0,100%);
-}
-.animated_title > div.text_top div {
-  color: #05AA92;
-}
-.animated_title > div.text_bottom {
-  bottom: 0;
-}
-.animated_title > div.text_bottom div {
-  animation: showBottomText 1s;
-  animation-delay: 1.80s;
-  animation-fill-mode: forwards;
-  top: 0;
-  transform: translate(0, -100%);
-}
-
 .container {
     position: relative;
     display: flex;
     justify-content: start;
-    padding: 5.5% 2% 0% 2%;
+    padding: 2%;
     height: max-content;
     background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
 
 }
 
-.image{
-    border: 1px solid var(--peacock);   
-    border-radius:4%;
+.image {
+    border: 1px solid var(--peacock);
+    border-radius: 4%;
     border-collapse: separate;
     perspective: 1px;
     overflow: hidden;
     width: fit-content;
     height: fit-content;
     padding: 0%;
-    margin-right: 4%;
 }
+
 .images {
-    background-size: contain;
+    background-size: cover;
 }
 
 
-  
-  .brand {
+
+.brand {
+    display: flex;
+    justify-content: end;
+    text-align: center;
     color: var(--peacock);
-    font-size: 40px;
-    margin: 20px;
-    padding: 5px;
+    font-size: 35px;
+    margin-top: 2%;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
     border-radius: 12px;
-    width: fit-content;
+    padding: 12px;
+    color: black;
+    background-color: var(--peacock);
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: var(--peacock);
+        color: whitesmoke;
+    }
 }
-.company_details{
-    border-radius:4%;
+
+.company_details {
+    border-radius: 4%;
 }
-.logo,.brand{
+
+.logo,
+.brand {
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
-.app{
+
+.app {
     font-size: 20px;
     color: black;
-   text-align: center;
+    text-align: center;
 }
