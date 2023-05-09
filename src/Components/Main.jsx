@@ -29,7 +29,10 @@ const Main = () => {
             </div>
         </div><div>
                 <Slider />
-            </div></>
+            </div>
+            
+           
+            </>
         
     )
 }

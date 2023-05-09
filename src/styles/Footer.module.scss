@@ -72,11 +72,36 @@
     }
 }
 
-.copyright{
+.copyright {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #DDDDDD;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:4px  15px;
+    padding: 4px 15px;
+}
+
+.top {
+    text-align: center;
+    font-weight: bolder;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    text-decoration: none;
+    bottom: 8px;
+    right: 25px;
+    padding: 8px 12px 12px 12px;
+    background: rgba(0, 0, 0, .5);
+    color: whitesmoke;
+    border-radius: 20px;
+
+    &:hover {
+        transform: scale(1.2);
+        text-decoration: none;
+        background: rgba(0, 0, 0, 1);
+        color: whitesmoke;
+
+    }
 }
