@@ -42,7 +42,7 @@ const Footer = () => {
           <Image src={img} alt="logo" height={90} width={90} className='mt-2' />
           <h5 className={styles.brand}>Rajalkshmi Agencies</h5>
           <h5>Send Feedback</h5>
-          <button className={`btn ${styles.link}`}>Feedback &rarr;</button>
+          <a href="https://forms.gle/hKrgXRVyNPHhoTbA6" target='_blank' className={`btn ${styles.link}`}>Feedback &rarr;</a>
         </div>
       </div>
       </div>
