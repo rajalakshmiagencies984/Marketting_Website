@@ -6,7 +6,7 @@ const ProductCard = ({title}) => {
   return (
     <div>
     <div>
-        <Image src={bottle} height={225} width={225} className={styles.img} />
+        <Image src={bottle} height={225} width={225} alt={title} className={styles.img} />
     </div>
     <div className={`mb-4 ${styles.title}`}>
         {title}

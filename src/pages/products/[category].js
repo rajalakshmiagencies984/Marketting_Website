@@ -8,7 +8,7 @@ const Products = () => {
     <div className={styles.cont}>
 
   <div className = {styles.card}>
-    <img src={bottle} alt="" />
+    {/* <img src={bottle} alt="" /> */}
     <div>
       <h2>
         Product name

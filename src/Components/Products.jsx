@@ -14,21 +14,21 @@ const Products = () => {
   ]
 
   return (
- 
-    <div className={styles.container}>
-       
 
-      
+    <div className={styles.container}>
+
+
+
             <p className={`${styles.heading} mx-5`}>Our Products</p>
             <div className={`row ${styles.productsList}`}>
             {category.map((c,i)=>(
-                <div className={`col-sm-12 col-md-6 col-lg-4 my-1 shadow mx-3 ${styles.productList}`} style={{backgroundColor:c.color}}>
+                <div key={i} className={`col-sm-12 col-md-6 col-lg-4 my-1 shadow mx-3 ${styles.productList}`} style={{backgroundColor:c.color}}>
                 <ProductCard key={i} {...c} />
                 </div>
                 ))}
             </div>
 
-           
+
     </div>
 
   )
