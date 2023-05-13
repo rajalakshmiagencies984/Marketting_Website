@@ -3,6 +3,7 @@ import styles from '../styles/Footer.module.scss'
 import Image from 'next/image'
 import img from '../assets/logo.png'
 import { instagram, gmail, whatsapp } from './logos'
+import Link from 'next/link'
 // import Button from 'components/CustomButtons/Button.js';
 const Footer = () => {
   const products = ['Fungicides', "Insecticide", "Fungicide", "Crop Enhancement", "Herbicides", "Fertilizers", "Seeds",]
@@ -30,9 +31,9 @@ const Footer = () => {
           <div className={styles.socialContainer}>
             {logos.map((l, i) => (
               <div className={`shadow ${styles.socialLogos}`} key={i}>
-                <a href={l.link} target='_blank'>
+                <Link href={l.link} target='_blank'>
                 <Image src={l.img} alt={`logo_${i}`} height={24} width={24} className={`${styles.social}`} />
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -42,7 +43,7 @@ const Footer = () => {
           <Image src={img} alt="logo" height={90} width={90} className='mt-2' />
           <h5 className={styles.brand}>Rajalkshmi Agencies</h5>
           <h5>Send Feedback</h5>
-          <a href="https://forms.gle/hKrgXRVyNPHhoTbA6" target='_blank' className={`btn ${styles.link}`}>Feedback &rarr;</a>
+          <Link href="https://forms.gle/hKrgXRVyNPHhoTbA6" target='_blank' className={`btn ${styles.link}`}>Feedback &rarr;</Link>
         </div>
       </div>
       </div>
