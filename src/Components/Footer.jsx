@@ -37,6 +37,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
+        <a href="#home" title='Scrool To Top' class={styles.top} >↑</a>
         <div className={`col-3 mt-2 ${styles.logo}`}>
           <Image src={img} alt="logo" height={90} width={90} className='mt-2' />
           <h5 className={styles.brand}>Rajalkshmi Agencies</h5>

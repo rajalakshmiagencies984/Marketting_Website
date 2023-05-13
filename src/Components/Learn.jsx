@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from '../styles/Learn.module.scss'
 import LearnCard from './LearnCard'
+import team from '../assets/OurTeam.jpg'
+import about from '../assets/about.png'
+import contact from '../assets/contact.jpg'
 
 const Learn = () => {
 
@@ -8,20 +11,23 @@ const Learn = () => {
         {
             background:"#00aa95",
             name: "About Us",
-            address: "Rajalakshmi Agencies is one of the world leaders in crop protection. With our complete portfolio of solutions, we put into practice our purpose of bringing simplicity to agriculture.",
+            store:about,
+            address: "One of the top businesses for crop protection in agriculture is Rajalakshmi Agencies. With our comprehensive suite of products, we carry out our goal of making agriculture simpler.",
 
         },
 
         {
             background:"#a5e887",
             name: "Our Team",
-            address: "Rajalakshmi Agencies is one of the world leaders in crop protection. With our complete portfolio of solutions, we put into practice our purpose of bringing simplicity to agriculture.",
+            store:team,
+            address: "We have a strong human resource pool to help you in your location. We send qualified professionals to inspect your fields.",
         },
 
         {
             background:"#00cb75",
             name: "Contact Us",
-            address: "Rajalakshmi Agencies is one of the world leaders in crop protection. With our complete portfolio of solutions, we put into practice our purpose of bringing simplicity to agriculture.",
+            store:contact,
+            address: "We have offline stores at three different locations. At any time you can contact through WhatsApp, Email or through phone.",
         }
 
     ]

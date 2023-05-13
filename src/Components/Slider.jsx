@@ -1,7 +1,6 @@
 import SimpleImageSlider from "react-simple-image-slider";
 import styles from '../styles/Slider.module.scss'
-import img from '../assets/logo.png'
-import Image from 'next/image'
+
 
 
 
@@ -19,10 +18,10 @@ const Slider = () => {
   return (
     <>
       <div className={`row ${styles.container}`}>
-        <div className={`col-7 ${styles.image}`}>
+        <div className={`col-8 ${styles.image}`}>
           <SimpleImageSlider className={styles.images}
-            width={790}
-            height={550}
+            width={970}
+            height={600}
             images={images}
             showBullets={true}
             showNavs={true}
@@ -30,20 +29,9 @@ const Slider = () => {
             navMargin={5}
             navStyle={2} />
         </div>
-        <div className={`col-5 ${styles.company_details}`}>
-          <div className={styles.animated_title}>
-            <div className={styles.text_top}>
-              <div>
-                <span >
-                  <Image src={img} alt="logo" height={150} width={150} className={`${styles.logo}`} />
-                </span>
-                <span>Rajalkshmi</span>
-              </div>
-            </div>
-            <div className={styles.text_bottom}>
-              <div>Agencies</div>
-            </div>
-          </div>
+        <div className={`col-4 ${styles.download}`}>
+          <h6 className={styles.brand}>Download The App From Here</h6>
+          <button className={`btn ${styles.link}`}>Download</button>
         </div>
       </div></>
 
