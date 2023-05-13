@@ -7,7 +7,7 @@ import { instagram, gmail, whatsapp } from './logos'
 const Footer = () => {
   const products = ['Fungicides', "Insecticide", "Fungicide", "Crop Enhancement", "Herbicides", "Fertilizers", "Seeds",]
   const extra = ["About Us", "Our Team", "Contact Us"]
-  const logos = [whatsapp, gmail, instagram];
+  const logos = [{link:"https://wa.me/8667259481",img:whatsapp}, {link:"https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new",img:gmail}, {link:"https://www.instagram.com/i._am._karthi._/",img:instagram}];
 
   return (
 
@@ -30,7 +30,9 @@ const Footer = () => {
           <div className={styles.socialContainer}>
             {logos.map((l, i) => (
               <div className={`shadow ${styles.socialLogos}`} key={i}>
-                <Image src={l} alt={`logo_${i}`} height={24} width={24} className={`${styles.social}`} />
+                <a href={l.link} target='_blank'>
+                <Image src={l.img} alt={`logo_${i}`} height={24} width={24} className={`${styles.social}`} />
+                </a>
               </div>
             ))}
           </div>
