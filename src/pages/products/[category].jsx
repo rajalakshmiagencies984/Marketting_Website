@@ -3,6 +3,7 @@ import useSWR  from  'swr'
 import axios from 'axios'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+import styles from '../../styles/category.module.scss'
 const Products = () => {
   const router=useRouter();
   const category = router.query.category
@@ -23,24 +24,27 @@ const Products = () => {
   if (isLoading) return <div>loading...</div>
 
   return (
-      <div className="container my-3">
+      <div className={`${styles.container} `}>
         {
           data && data.length!=0 &&
-
-        <div className="row">
+          <>
+        <h1  className='p-4'>{category}</h1>
+        <h2 className='px-4 p-2'>Total Products - {data.length}</h2>
+        <div className={styles.productList}>
           {
             data?.map(p=>(
-              <div className="col-sm-12 col-md-6 col-lg-4 my-2" key={p._id}>
-                    <div className="card shadow" style={{width:"18rem"}}>
-                        <Image src={p.image} className="card-img-top" height={170} width={120} alt={p.name}/>
+
+                    <div className={`${styles.productcard} card shadow`} key={p._id} style={{width:"18rem"}}>
+                        <Image src={p.image} className="card-img-top" height={200} width={120} alt={p.name}/>
                         <div className="card-body">
                           <h5 className="card-title">{p.name}</h5>
                         </div>
                   </div>
-              </div>
+
             ))
           }
         </div>
+        </>
 }
       </div>
   )

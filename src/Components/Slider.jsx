@@ -31,7 +31,7 @@ const Slider = () => {
         </div>
         <div className={`col-md-12 col-lg-4 ${styles.download}`}>
           <h6 className={styles.brand}>Download The App From Here</h6>
-          <Link href="https://drive.google.com/file/d/1dliRuT642qQyxzkKYFPKCGW3-6XGF4mM/view?usp=share_link" className={`btn ${styles.link}`}>Download</Link>
+          <Link href="https://drive.google.com/file/d/1dliRuT642qQyxzkKYFPKCGW3-6XGF4mM/view?usp=share_link" target="_blank" className={`btn ${styles.link}`}>Download</Link>
         </div>
       </div></>
 
