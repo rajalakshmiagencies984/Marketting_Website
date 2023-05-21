@@ -18,7 +18,7 @@ const Slider = () => {
   return (
     <>
       <div className={`row ${styles.container}`}>
-        <div className={`col-8 ${styles.image}`}>
+        <div className={`col-md-12 col-lg-8 ${styles.image}`}>
           <SimpleImageSlider className={styles.images}
             width={970}
             height={600}
@@ -29,7 +29,7 @@ const Slider = () => {
             navMargin={5}
             navStyle={2} />
         </div>
-        <div className={`col-4 ${styles.download}`}>
+        <div className={`col-md-12 col-lg-4 ${styles.download}`}>
           <h6 className={styles.brand}>Download The App From Here</h6>
           <button className={`btn ${styles.link}`}>Download</button>
         </div>

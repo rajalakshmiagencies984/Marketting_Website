@@ -1,20 +1,16 @@
 .navbar {
   position: fixed;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   z-index: 500;
   height: auto;
   padding: 1rem;
   background-color: #373d3e;
   background-image: linear-gradient(315deg, #373d3e 0%, #101010 74%);
-//   background-color: #000000;
-// background-image: linear-gradient(315deg, #000000 0%, #484848 74%);
-  
 
 }
+
+
 .logo {
   background-color: var(--white);
   padding: 5px;
@@ -44,5 +40,13 @@
 
   &:not(:hover) {
     transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .brand{
+      display: none;
+  }
+  .navbar{
+    padding: .5rem;
   }
 }

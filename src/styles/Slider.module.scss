@@ -1,5 +1,4 @@
 .container {
-    position: relative;
     display: flex;
     justify-content: flex-start;
     padding: 2%;
@@ -48,7 +47,6 @@
     background-color: var(--peacock);
 
     &:hover {
-        transform: scale(1.1);
         background-color: var(--peacock);
         color: whitesmoke;
     }
@@ -69,4 +67,10 @@
     font-size: 20px;
     color: black;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        height: 100%;
+    }
 }
