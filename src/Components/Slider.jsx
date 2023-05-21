@@ -16,7 +16,7 @@ const images = [
 
 const Slider = () => {
   return (
-    <>
+
       <div className={`row ${styles.container}`}>
         <div className={`col-md-12 col-lg-8 ${styles.image}`}>
           <SimpleImageSlider className={styles.images}
@@ -27,13 +27,15 @@ const Slider = () => {
             showNavs={true}
             navSize={30}
             navMargin={5}
-            navStyle={2} />
+            navStyle={2}
+            autoPlay={true}
+            />
         </div>
         <div className={`col-md-12 col-lg-4 ${styles.download}`}>
           <h6 className={styles.brand}>Download The App From Here</h6>
           <Link href="https://drive.google.com/file/d/1dliRuT642qQyxzkKYFPKCGW3-6XGF4mM/view?usp=share_link" target="_blank" className={`btn ${styles.link}`}>Download</Link>
         </div>
-      </div></>
+      </div>
 
   );
 }
