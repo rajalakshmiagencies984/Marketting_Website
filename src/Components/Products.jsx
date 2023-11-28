@@ -2,6 +2,7 @@ import React from 'react'
 import ProductCard from './ProductCard'
 import styles from '../styles/Products.module.scss'
 
+
 const Products = () => {
 
     const category = [
