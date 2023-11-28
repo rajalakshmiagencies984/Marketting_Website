@@ -1,8 +1,10 @@
 .container{
-    height: 100vh;
+    min-height: 100vh;
+    height:auto;
+    overflow: auto;
     width: 100%;
     // background: linear-gradient(-45deg,lightblue 0%, lightblue,50%, lightgray 50%, var(--white) 100%);
-    background: linear-gradient(60deg,#A0C3D2 0%, #A0C3D2,50%, lightgray 50%, var(--white) 100%);
+    background: linear-gradient(90deg,#A0C3D2 0%, #A0C3D2,50%, lightgray 50%, var(--white) 100%);
 
 }
 
@@ -15,6 +17,6 @@
 }
 
 .productcard{
-    border-radius: 24px;
+    border-radius: 24px ;
     border:2px solid lightgray;
 }

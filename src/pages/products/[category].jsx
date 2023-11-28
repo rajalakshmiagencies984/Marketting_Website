@@ -29,15 +29,15 @@ const Products = () => {
           data && data.length!=0 &&
           <>
         <h1  className='p-4'>{category}</h1>
-        <h2 className='px-4 p-2'>Total Products - {data.length}</h2>
+        <h2 className='px-4 p-2 mb-5'>Total Products - {data.length}</h2>
         <div className={styles.productList}>
           {
             data?.map(p=>(
 
-                    <div className={`${styles.productcard} card shadow`} key={p._id} style={{width:"18rem"}}>
-                        <Image src={p.image} className="card-img-top" height={200} width={120} alt={p.name}/>
+                    <div className={`${styles.productcard} card shadow`} key={p._id} style={{width:"18rem",marginBottom:"5rem"}}>
+                        <Image src={p.image} className="card-img-top mt-5" height={250} width={120} alt={p.name}/>
                         <div className="card-body">
-                          <h5 className="card-title">{p.name}</h5>
+                          <h5 className="card-title" style={{textAlign:"center"}}>{p.name}</h5>
                         </div>
                   </div>
 
