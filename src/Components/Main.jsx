@@ -3,19 +3,27 @@ import Image from 'next/image'
 import img from '../assets/logo.png'
 import styles from '../styles/Main.module.scss'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 
 const Main = () => {
-
+    const router = useRouter()
+    const timeoutId = setTimeout(() => {
+        navigate();
+    }, 8000)
+    const navigate = () => {
+        router.push("/Second");
+        return () => clearTimeout(timeoutId);
+    }
     return (
         <div className={styles.container}>
             <div className={styles.overlay}>
 
             </div>
-            <video className={styles.video} src={require('../../public/main.mp4')} autoPlay loop muted/>
+            <video className={styles.video} src={require('../../public/main.mp4')} autoPlay loop muted />
             <div className={styles.floating}>
                 <div>
-                <Image src={img} height={96} width={96} alt="logo" className={styles.logo} />
+                    <Image src={img} height={96} width={96} alt="logo" className={styles.logo} />
                 </div>
                 <div className={styles.brand}>
                     Rajalakshmi Agencies
